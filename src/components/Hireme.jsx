@@ -1,10 +1,10 @@
 import { content } from "../Content";
-
+import resume from '../assets/VIGNESH_M_RESUME.pdf'
 const Hireme = () => {
   const { Hireme } = content;
 
   return (
-    <section className="bg-bg_light_primary">
+    <section id="hireme">
       <div className="md:container px-5 pt-14">
         <h2 className="title" data-aos="fade-down">
           {Hireme.title}
@@ -33,9 +33,11 @@ const Hireme = () => {
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white">
-              {Hireme.btnText}
-            </button>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <button className="btn bg-dark_primary text-white">
+                {Hireme.btnText}
+              </button>
+            </a>
           </div>
         </div>
       </div>

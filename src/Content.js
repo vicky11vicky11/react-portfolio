@@ -1,216 +1,254 @@
 // import images
 import Hero_person from "./assets/images/Hero/person.png";
 
-import figma from "./assets/images/Skills/figma.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import ps from "./assets/images/Skills/ps.png";
+
+import css from "./assets/images/Skills/css.png";
+import git from "./assets/images/Skills/git.png";
+import html from "./assets/images/Skills/html.png";
+import java from "./assets/images/Skills/java.png";
+import javascript from "./assets/images/Skills/javascript.png";
+import mysql from "./assets/images/Skills/mysql.png";
 import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import tailwindcss from "./assets/images/Skills/tailwindcss.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
-import person_project from "./assets/images/projects/person.png";
-
-import avatar1 from "./assets/images/Testimonials/avatar1.png";
-import avatar2 from "./assets/images/Testimonials/avatar2.png";
-import avatar3 from "./assets/images/Testimonials/avatar3.png";
-import avatar4 from "./assets/images/Testimonials/avatar4.png";
+import project1 from "./assets/images/Projects/img1.png";
+import project2 from "./assets/images/Projects/img2.png";
+import project3 from "./assets/images/Projects/img3.png";
+import person_project from "./assets/images/Projects/person.png";
 
 import Hireme_person from "./assets/images/Hireme/person.png";
 import Hireme_person2 from "./assets/images/Hireme/person2.png";
 
 // import icons from react-icons
-import { GrMail } from "react-icons/gr";
-import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
-import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
-import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
-import { MdOutlinePermContactCalendar } from "react-icons/md";
+import { BsLinkedin } from "react-icons/bs";
+import { FaRegUser, FaWhatsapp } from "react-icons/fa";
+import { GrGithub, GrMail } from "react-icons/gr";
+import { MdArrowForward, MdOutlinePermContactCalendar } from "react-icons/md";
+import { RiProjectorLine, RiServiceLine } from "react-icons/ri";
+import { TbSmartHome } from "react-icons/tb";
 
 export const content = {
-  nav: [
-    {
-      link: "#home",
-      icon: TbSmartHome,
+    nav: [
+        {
+            link: "#home",
+            icon: TbSmartHome,
+        },
+        {
+            link: "#skills",
+            icon: BiUser,
+        },
+        {
+            link: "#services",
+            icon: RiServiceLine,
+        },
+        {
+            link: "#projects",
+            icon: RiProjectorLine,
+        },
+        {
+            link: "#contact",
+            icon: MdOutlinePermContactCalendar,
+        },
+    ],
+    hero: {
+        title: "Full Stack Developer",
+        firstName: "VIGNESH",
+        LastName: "M",
+        btnText: "Hire Me",
+        image: Hero_person,
+        hero_content: [
+            {
+                count: "20+",
+                text: "Projects Worked in Web development",
+            },
+        ],
     },
-    {
-      link: "#skills",
-      icon: BiUser,
+    skills: {
+        title: "Skills",
+        subtitle: "MY TOP SKILLS",
+        skills_content: [
+            {
+                name: "HTML",
+                para: "Proficient in creating structured and semantic web pages using HTML5",
+                logo: html,
+                details: [
+                    "Expertise in writing clean and semantic HTML markup for web pages.",
+                    "Skilled in implementing accessibility features to ensure compliance with WCAG standards.",
+                    "Experience in optimizing HTML code for improved performance and SEO.",
+                    "Knowledgeable about responsive web design principles and mobile-first development practices.",
+                ],
+            },
+            {
+                name: "CSS",
+                para: "Skilled in styling web pages using CSS3",
+                logo: css,
+                details: [
+                    "Proficient in writing CSS code to style web pages with modern layout techniques.",
+                    "Experienced in using CSS preprocessors like Sass to enhance development workflows.",
+                    "Familiar with CSS animation techniques to create interactive user interfaces.",
+                    "Adept at troubleshooting cross-browser compatibility issues and applying CSS fixes.",
+                ],
+            },
+            {
+                name: "Tailwind CSS",
+                para: "Experience in building responsive and modern UIs with Tailwind CSS",
+                logo: tailwindcss,
+                details: [
+                    "Proficient in utilizing Tailwind CSS utility classes to rapidly build custom UI components.",
+                    "Experienced in configuring Tailwind CSS with custom themes and plugins to match design requirements.",
+                    "Familiar with Tailwind CSS JIT mode for optimizing CSS bundle sizes and improving build times.",
+                    "Knowledgeable about Tailwind CSS best practices for structuring utility classes and organizing styles.",
+                ],
+            },
+            {
+                name: "JavaScript",
+                para: "Strong understanding of JavaScript for both client-side and server-side development",
+                logo: javascript,
+                details: [
+                    "Expertise in writing clean and modular JavaScript code for both frontend and backend applications.",
+                    "Skilled in using modern JavaScript features such as ES6+ syntax, arrow functions, and destructuring.",
+                    "Familiar with JavaScript frameworks/libraries such as React.js, Vue.js, and Express.js.",
+                    "Experience in asynchronous programming using Promises, async/await, and handling callback functions.",
+                ],
+            },
+            {
+                name: "React js",
+                para: "Experience in building dynamic and interactive user interfaces with React.js",
+                logo: reactjs,
+                details: [
+                    "Expertise in building RESTful APIs and web servers using Node.js and Express.js framework.",
+                    "Experience in database integration with MongoDB, MySQL, or PostgreSQL using Node.js drivers or ORMs.",
+                    "Familiar with asynchronous programming in Node.js and handling I/O operations efficiently.",
+                    "Adept at deploying and managing Node.js applications on platforms like Heroku, AWS, or Google Cloud.",
+                ],
+            },
+            {
+                name: "Java",
+                para: "Proficient in developing robust and scalable applications using Java.",
+                logo: java,
+                details: [
+                    "Expertise in building web applications using Java with frameworks like Spring Boot and Hibernate.",
+                    "Experience in integrating relational databases such as MySQL, PostgreSQL with Java applications.",
+                    "Strong knowledge of object-oriented programming (OOP) principles and design patterns.",
+                    "Adept in writing clean, maintainable code and performing unit testing using JUnit and Mockito.",
+                    "Familiar with building RESTful web services and microservices architecture using Java.",
+                ],
+            },
+            {
+                name: "MySQL",
+                para: "Skilled in managing and optimizing relational databases using MySQL.",
+                logo: mysql,
+                details: [
+                    "Proficient in designing and implementing database schemas and relationships.",
+                    "Experience in writing complex SQL queries for data retrieval, manipulation, and reporting.",
+                    "Adept at optimizing database performance through indexing, query optimization, and normalization.",
+                    "Familiar with backup and recovery strategies to ensure data integrity and availability.",
+                    "Knowledge of using MySQL with various frameworks and programming languages, including Java and Node.js.",
+                ],
+            },
+            {
+                name: "Git",
+                para: "Proficient in version control and collaboration using Git.",
+                logo: git,
+                details: [
+                    "Expertise in managing repositories, branches, and merges to maintain code integrity.",
+                    "Experience in utilizing Git commands for version tracking and collaboration in projects.",
+                    "Familiar with resolving merge conflicts and understanding Git workflows like Git Flow.",
+                    "Adept at using platforms like GitHub, GitLab, or Bitbucket for code hosting and collaboration.",
+                    "Knowledge of writing clear commit messages and using tags for version releases.",
+                ],
+            },
+        ],
+        icon: MdArrowForward,
     },
-    {
-      link: "#services",
-      icon: RiServiceLine,
+    services: {
+        title: "Services",
+        subtitle: "WHAT I KNOW",
+        service_content: [
+            {
+                title: "Front-End Development",
+                para: "Using React, HTML, CSS, JavaScript, and Tailwind CSS to create dynamic and responsive user interfaces that deliver seamless user experiences.",
+                logo: services_logo1,
+            },
+            {
+                title: "Back-End Development",
+                para: "Using Java and Spring Boot to build scalable and efficient server-side applications, integrating with databases like MySQL and MongoDB to manage data effectively.",
+                logo: services_logo2, 
+            },
+            {
+                title: "Database Development",
+                para: "Utilizing MySQL to design, implement, and manage relational databases, optimizing data storage and retrieval through effective schema design and complex SQL queries.",
+                logo: services_logo3, 
+            },
+        ],
     },
-    {
-      link: "#projects",
-      icon: RiProjectorLine,
+    Projects: {
+        title: "Projects",
+        subtitle: "MY CREATION",
+        image: person_project,
+        project_content: [
+            {
+                title: "Gym Website",
+                image: project1,
+                url: "https://vignesh-fitclub.netlify.app/",
+            },
+            {
+                title: "Nike Website",
+                image: project2,
+                url: "https://vignesh-nike-site.netlify.app/",
+            },
+            {
+                title: "OmniFood",
+                image: project3,
+                url: "https://omnifood-vignesh.netlify.app/",
+            },
+        ],
     },
-    {
-      link: "#contact",
-      icon: MdOutlinePermContactCalendar,
+    Hireme: {
+        title: "Hire Me",
+        subtitle: "FOR YOUR PROJECTS",
+        image1: Hireme_person,
+        image2: Hireme_person2,
+        para: "\"Unlock the power of Java Full Stack Development with my expertise! Skilled in Java, Spring Boot, and React, I craft seamless web solutions that combine robust back-end functionality with dynamic front-end experiences. Let's collaborate to elevate your projects and drive success!\"",
+        btnText: "Hire Me",
     },
-  ],
-  hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
-    btnText: "Hire Me",
-    image: Hero_person,
-    hero_content: [
-      {
-        count: "8+",
-        text: "Years of Experinse in Web development",
-      },
-      {
-        count: "20+",
-        text: "Projects Worked in my career",
-      },
-    ],
-  },
-  skills: {
-    title: "Skills",
-    subtitle: "MY TOP SKILLS",
-    skills_content: [
-      {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
-      },
-      {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
-      },
-      {
-        name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
-        logo: ps,
-      },
-      {
-        name: "React js",
-        para: "Lorem ipsum text  dummy",
-        logo: reactjs,
-      },
-      {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
-      },
-      {
-        name: "Python",
-        para: "Lorem ipsum text  dummy",
-        logo: python,
-      },
-    ],
-    icon: MdArrowForward,
-  },
-  services: {
-    title: "Services",
-    subtitle: "WHAT I OFFER",
-    service_content: [
-      {
-        title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo1,
-      },
-      {
-        title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo2,
-      },
-      {
-        title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-        logo: services_logo3,
-      },
-    ],
-  },
-  Projects: {
-    title: "Projects",
-    subtitle: "MY CREATION",
-    image: person_project,
-    project_content: [
-      {
-        title: "Gym Website",
-        image: project1,
-      },
-      {
-        title: "Social Media web",
-        image: project2,
-      },
-      {
-        title: "Creative Website",
-        image: project3,
-      },
-    ],
-  },
-  Testimonials: {
-    title: "Testimonials",
-    subtitle: "MY CLIENT REVIEWS",
-    testimonials_content: [
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar1,
-        name: "JOHN DOE",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar2,
-        name: "Tom Alex",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar3,
-        name: "Johnny",
-      },
-      {
-        review:
-          "“In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstra”",
-        img: avatar4,
-        name: "ROBBIN",
-      },
-    ],
-  },
-  Hireme: {
-    title: "Hire Me",
-    subtitle: "FOR YOUR PROJECTS",
-    image1: Hireme_person,
-    image2: Hireme_person2,
-    para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
-    btnText: "Hire Me",
-  },
-  Contact: {
-    title: "Contect Me",
-    subtitle: "GET IN TOUCH",
-    social_media: [
-      {
-        text: "codeaprogram@gmail.com",
-        icon: GrMail,
-        link: "mailto:codeaprogram@gmail.com",
-      },
-      {
-        text: "+91 1234 56778",
-        icon: MdCall,
-        link: "https://wa.me/1234567890",
-      },
-      {
-        text: "codeaprogram",
-        icon: BsInstagram,
-        link: "https://www.instagram.com/codeaprogram/",
-      },
-    ],
-  },
-  Footer: {
-    text: "All © Copy Right Reserved 2022",
-  },
+    Contact: {
+        title: "Contect Me",
+        subtitle: "GET IN TOUCH",
+        social_media: [
+            {
+                text: "Vignesh M",
+                icon: FaRegUser,
+                link: "http://vignesh-website.netlify.app/",
+            },
+            {
+                text: "vickyvignesh430329@gmail.com",
+                icon: GrMail,
+                link: "mailto:vickyvignesh430329@gmail.com",
+            },
+            {
+                text: "+91 63695 31042",
+                icon: FaWhatsapp,
+                link: "https://wa.me/+916369531042",
+            },
+            {
+                text: "Vignesh Muthusamy",
+                icon: BsLinkedin,
+                link: "https://www.linkedin.com/in/vignesh-muthusamy-/",
+            },
+            {
+                text: "vicky11vicky11",
+                icon: GrGithub,
+                link: "https://www.github.com/vicky11vicky11/",
+            },
+        ],
+    },
+    Footer: {
+        text: "All © Copy Right Reserved 2022",
+    },
 };

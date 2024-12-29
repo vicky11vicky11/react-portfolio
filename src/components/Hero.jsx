@@ -1,6 +1,8 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
+import resume from "../assets/VIGNESH_M_RESUME.pdf";
+
 const Hero = () => {
   const { hero } = content;
 
@@ -22,8 +24,10 @@ const Hero = () => {
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
           <h2>{hero.title}</h2>
           <br />
-          <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+          <div className="flex justify-end ">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <button className="btn transition duration-900 ease-in-out hover:bg-[#B6CCF4] hover:text-white ">{hero.btnText}</button>
+            </a>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (

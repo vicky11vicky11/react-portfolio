@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+// import pagination from swiper
 import { Pagination } from "swiper";
 
 const Projects = () => {
@@ -43,12 +44,13 @@ const Projects = () => {
                 key={i}
                 className="bg-white rounded-3xl p-5 border-b-8 border-[#FAF9FD] h-fit"
               >
-                <img src={content.image} alt="..." />
+                <a href={content.url} target="_blank" >
+                  <img src={content.image} alt="..." /></a>
                 <div className="flex flex-col gap-1 mt-2">
                   <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <button className="font-bold text-gray self-end">
-                    READ MORE
-                  </button>
+                  <a href={content.url} target="_blank" rel="noopener noreferrer" className="font-bold text-gray self-end">
+                    EXPLORE
+                  </a>
                 </div>
               </SwiperSlide>
             ))}
