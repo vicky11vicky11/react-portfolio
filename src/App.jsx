@@ -19,6 +19,7 @@ const App = () => {
       disable: "mobile",
     });
   }, []);
+  const year = new Date().getFullYear();
   return (
     <div className="">
       <Navbar />
@@ -30,7 +31,7 @@ const App = () => {
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">VIGNESH MUTHUSAMY</h6>
-        <p>Vignesh © All CopyRights Reserved 2024</p>
+        <p>Vignesh © All CopyRights Reserved {year}</p>
       </footer>
     </div>
   );
