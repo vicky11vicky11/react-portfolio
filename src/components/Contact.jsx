@@ -11,17 +11,48 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Send email to you
     emailjs
       .sendForm(
-        'service_p37r907', 'template_kr21a3a', form.current, 'Zza3fHy6xEn2-9Rs3'
+        'service_p37r907', 
+        'template_kr21a3a', 
+        form.current, 
+        'Zza3fHy6xEn2-9Rs3'
       )
       .then(
         (result) => {
           console.log(result.text);
+
+          // Send acknowledgment email to the user
+          const userName = form.current.from_name.value;
+          const userEmail = form.current.user_email.value;
+          const userMessage = form.current.message.value;
+
+          // Send acknowledgment email to the user using the correct template ID
+          emailjs
+            .send(
+              'service_p37r907', // Same service ID
+              'template_8a2trzp', // Correct acknowledgment template ID
+              {
+                to_name: userName, // User's name
+                to_email: userEmail, // User's email
+                message: userMessage, // User's message
+              },
+              'Zza3fHy6xEn2-9Rs3' // Your user email API key
+            )
+            .then(
+              (result) => {
+                console.log("Acknowledgment sent:", result.text);
+              },
+              (error) => {
+                console.log("Error in acknowledgment email:", error.text);
+              }
+            );
+
           // Clear all input field values
           form.current.reset();
           // Success toast message
-          toast.success("Email send Successfully");
+          toast.success("Email sent successfully, an acknowledgment has been sent to your email.");
         },
         (error) => {
           console.log(error.text);
@@ -48,7 +79,6 @@ const Contact = () => {
             data-aos="fade-up"
             className="flex-1 flex flex-col gap-5"
           >
-            {/* Input Name as same as email js templates values */}
             <input
               type="text"
               name="from_name"

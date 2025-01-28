@@ -1,7 +1,7 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
-import resume from "../assets/VIGNESH_M_RESUME.pdf";
+import resume from "../assets/VIGNESH_M.pdf";
 
 const Hero = () => {
   const { hero } = content;
