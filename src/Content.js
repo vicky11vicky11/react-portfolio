@@ -10,6 +10,9 @@ import javascript from "./assets/images/Skills/javascript.svg";
 import mysql from "./assets/images/Skills/mysql.svg";
 import reactjs from "./assets/images/Skills/react.svg";
 import tailwindcss from "./assets/images/Skills/tailwindcss.svg";
+import spring from "./assets/images/Skills/spring-boot.svg"
+import vscode from "./assets/images/Skills/vs-code.svg";
+import intellij from "./assets/images/Skills/intellij-idea.svg";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -155,6 +158,17 @@ export const content = {
 				],
 			},
 			{
+				name: "Spring Boot",
+				para: "Experience in ORM (Object-Relational Mapping) frameworks like Hibernate.",
+				logo: spring,
+				details: [
+					"Proficient in mapping Java objects to relational database tables using Hibernate.",
+					"Skilled in writing SQL queries for data retrieval, manipulation, and reporting.",
+					"Adept at optimizing database performance through indexing, query optimization, and normalization.",
+					"Familiar with backup and recovery strategies to ensure data integrity and availability.",
+				],
+			},
+			{
 				name: "MySQL",
 				para: "Skilled in managing and optimizing relational databases using MySQL.",
 				logo: mysql,
@@ -166,7 +180,42 @@ export const content = {
 					"Knowledge of using MySQL with various frameworks and programming languages, including Java and Node.js.",
 				],
 			},
-			
+			{
+				name: "Git",
+				para: "Skilled in managing and optimizing relational databases using MySQL.",
+				logo: git,
+				details: [
+					"Proficient in designing and implementing database schemas and relationships.",
+					"Experience in writing complex SQL queries for data retrieval, manipulation, and reporting.",
+					"Adept at optimizing database performance through indexing, query optimization, and normalization.",
+					"Familiar with backup and recovery strategies to ensure data integrity and availability.",
+					"Knowledge of using MySQL with various frameworks and programming languages, including Java and Node.js.",
+				],
+			},
+			{
+				name: "VS Code",
+				para: "Skilled in managing and optimizing relational databases using MySQL.",
+				logo: vscode,
+				details: [
+					"Proficient in designing and implementing database schemas and relationships.",
+					"Experience in writing complex SQL queries for data retrieval, manipulation, and reporting.",
+					"Adept at optimizing database performance through indexing, query optimization, and normalization.",
+					"Familiar with backup and recovery strategies to ensure data integrity and availability.",
+					"Knowledge of using MySQL with various frameworks and programming languages, including Java and Node.js.",
+				],
+			},
+			{
+				name: "IntelliJ IDEA",
+				para: "Skilled in managing and optimizing relational databases using MySQL.",
+				logo: intellij,
+				details: [
+					"Proficient in designing and implementing database schemas and relationships.",
+					"Experience in writing complex SQL queries for data retrieval, manipulation, and reporting.",
+					"Adept at optimizing database performance through indexing, query optimization, and normalization.",
+					"Familiar with backup and recovery strategies to ensure data integrity and availability.",
+					"Knowledge of using MySQL with various frameworks and programming languages, including Java and Node.js.",
+				],
+			},
 		],
 		icon: MdArrowForward,
 	},
